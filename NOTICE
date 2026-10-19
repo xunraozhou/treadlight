@@ -1,0 +1,19 @@
+Treadlight / 踏光：律动之旅
+
+Derived from LIGHT//BOUND by FireEntity1:
+https://github.com/FireEntity1/lightbound-demo
+https://fire-entity.itch.io/lightbound
+
+The upstream Apache License 2.0 is retained in LICENSE.
+Original authorship and Git history are retained.
+
+Treadlight adds a three-room journey, beat judgement, timed light bridges,
+warning lasers, original synthesized prototype music, Chinese interface,
+pause/retry flow, documentation and gameplay verification.
+Modified upstream files are marked with a change notice.
+
+The upstream music-production source directory was removed from this
+derivative's current tree for Windows filename compatibility and project size.
+It remains available in the upstream repository and inherited Git history.
+
+Additional notices are listed in THIRD_PARTY_NOTICES.md and licenses/.

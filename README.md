@@ -1,95 +1,96 @@
-<p align="center">
-  <img width="1920" src="https://cdn.hackclub.com/019cf45f-7cfe-7d67-a6ff-e8e395578dc4/lb-logo.png" alt="logo" />
-</p>
-<p align="center"><i>Play here! https://fire-entity.itch.io/lightbound </i></p>
-<p align="center"><i>Demo video here! https://www.youtube.com/watch?v=Z8Xa9AA1s14 </i></p>
+# 踏光：律动之旅 / Treadlight
 
-### <p align="center">A 2D stage-based rhythm game where the players movements are ***bound*** to the ***light***.</p>
+**随节拍起跳，让前方的光桥亮起来。** 基于 [FireEntity1 / LIGHT//BOUND](https://github.com/FireEntity1/lightbound-demo) 的 Godot 4.4 项目改版，新增三个短房间的旅程模式。保留原版激光生存玩法和关卡编辑器入口。
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=aNtMej4kIsU">
-    <img width="128" height="128" alt="fractured__anomaly" src="https://github.com/user-attachments/assets/812a37a3-a919-40bd-a7d5-1d177c544871" />
-  </a>
-</p>
+![标题画面](docs/title.png)
 
-<div align="center">
-  <div style="display: flex; overflow-x: auto; gap: 10px; justify-content: center; white-space: nowrap;">
-    <img src="https://github.com/user-attachments/assets/2c88972f-dd06-40ef-910c-d70c655d2de6" height="250" />
-    <img src="https://github.com/user-attachments/assets/79e219e4-e806-447a-ba75-655d40f54f99" height="250" />
-    <img src="https://github.com/user-attachments/assets/4839bde4-cf84-45bb-a3f9-a80458699f06" height="250" />
-  </div>
-</div>
+## 直接试玩
 
-<div align="center">
-<img width="516" height="288" alt="LIGHTBOUND_GIF_CROP" src="https://github.com/user-attachments/assets/d85bc89a-9831-48ac-acde-0971a1989f60" />
-</div>
+到本仓库的 **[Releases](https://github.com/xunraozhou/treadlight/releases)** 下载 `Treadlight-Windows-x64.zip`，解压后双击 `Treadlight.exe`。Windows x64，使用 OpenGL 兼容渲染器；无需安装 Godot。请先解压整个文件夹。
 
----
+源码开发：用 **Godot 4.4.1 Standard** 导入根目录的 `project.godot`，等待资源导入，然后按 **F5** 运行项目。默认主场景为 `campaign/main.tscn`。不需要 .NET。
 
-## How to play
-* **`A` / `D`** or **`←` / `→`** — Move left/right
-* **`S`** or **`↓`** — Ground slam
-* **`W`** or **`SPACE`** or **`↑`** — Jump/Double Jump
-* **Note:** Don't get hit by the lasers!
+## 操作
 
-## Features
-* One [original track](https://www.youtube.com/watch?v=aNtMej4kIsU) (with more on the way!)
-* Fully functioning, integrated map editor.
-* Variety of gameplay mechanics
-* Entire environment and all events are fully customizable
-* Optimized, reactive visualizer
+| 按键 | 功能 |
+| --- | --- |
+| A / D、← / → | 左右移动 |
+| 空格、W、↑ | 从地面起跳 |
+| R | 当前房间重试 |
+| Esc | 暂停 / 继续，结果页返回标题 |
+| Enter | 标题开始、失败重试、过关后继续 |
+| [ / ] | 判定校准每次 -10 / +10 毫秒，自动保存 |
+| M | 音乐开关 |
 
-## Development
-### Full Release Plans:
-* Fully custom made OST
-* More game mechanics
-* Better editor
-* Loading and sharing custom maps
+新版只使用地面单次跳跃，便于掌握相同的跳跃轨迹。原版的二段跳、下砸、冲刺等仍属于原版模式。
 
----
+## 玩法
 
-## Editor Usage
+1. 开场四拍准备；底部四盏灯与角色的收缩光环提示下一拍。
+2. 随时都能普通起跳。在虚线光桥前的安全平台踩拍起跳，会唤醒这一段光桥。
+3. 距最近节拍 **±80 ms** 为「准确」，**±150 ms** 为「良好」，两者均可点亮光桥。
+4. 光桥自实际激活时刻起持续 **4 拍 / 2 秒**，最后一拍闪烁；保持向前移动，及时通过。
+5. 偏拍仍能正常跳跃；可以在安全平台等待下一拍。同一拍只接受一次成功判定，空中按键不能刷分。
+6. 金色虚线是激光的一拍预警，粉色实体光束危险一拍。可以等待，也可以用普通跳跃越过。
+7. 坠落或触碰激光后按 Enter/R 重试：当前房间的音乐、计分和机关重新开始。
 
-### Getting Started
-1.  Open the editor through the menu
-2.  Click the **`+`** button in the top bar and give your new map a name
-3.  Click the **audio icon** in the top bar to select an `OGG` file.
+准确 +100 光能，良好 +60。只累计已通关房间的光能，失败尝试不计入总分。
 
-### Making & Editing Events
-<p align="center">
-  <img width="100%" alt="editor events" src="https://github.com/user-attachments/assets/390e4203-3b84-4618-9ec4-c67d42c078e2" />
-</p>
+![光桥与节拍提示](docs/gameplay.png)
 
-1.  **`SHIFT`** + **`LEFT CLICK`** to create an event on any block
-2.  **`LEFT CLICK`** on the event to open it in more detail and modify its parameters
-3.  **`CTRL`** or **`CMD`** + **`LEFT CLICK`** to select an event
-4.  **`CTRL`** or **`CMD`** + **`C` / `V`** to copy and paste events (events will auto deselect on paste)
-5.  **`RIGHT CLICK`** on an event to delete it
-6.  **`SCALE`** defaults to `1/1`, change it to any note length value (such as `1/3` or `1/4`) to modify scale.
-7.  **`BPM`** and **`OFFSET`** (start offset) can be entered in the top bar.
-8.  Song metadata can be entered in the top bar.
-9.  Press the **`PLAY`** button or **`SPACE`** to start/stop the preview.
+## 三个房间
 
-### Editing event parameters
-<p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/f0f12044-7cb6-48cd-a920-dc0d286abead" />
-  <img width="48%" src="https://github.com/user-attachments/assets/11f8f3dc-6605-4cfc-aea1-cd0228eca7ef" />
-</p>
+| 房间 | 内容 | 自动路线用时，不含两秒准备 |
+| --- | --- | --- |
+| 听见节拍 | 固定平台、一段光桥，无激光 | 约 18 秒 |
+| 穿过光隙 | 一段光桥，同一种横向激光 | 约 20 秒 |
+| 点亮终点 | 两段光桥与激光组合 | 约 25 秒 |
 
-1.  **`LEFT CLICK`** on the event to open it
-2.  If event is movable, there will be a transform interface to move the event and rotate it.
-3.  If event is multicolourable **`CTRL`** or **`CMD`** for individual selection and **`SHIFT`** for selection selection
-4.  **`amount`** modifies the amount of lasers that spawn in a multi-laser event
-5.  **`speed`** modifies the speed at which lasers spawn in a multi-laser event
-6.  **(In circles)** **`direction`** modifies the direction in which lasers spawn, try values other than `-1`/`1` for differing spawn patterns!
-7.  **(In circles)** **`edges`** modifies the amount of sides in the spawned polygon
-8.  **(In circles)** **`radius`** modifies the size of the center of the spawned polygon
-9.  **(In sweeps)** **`direction`** modifies the direction the lasers sweep
-10. ****(In sweeps)**** **`outwards`** modifies whether the laser sweep goes both ways
+路线长度、140 px/s 移速、200 px 光桥和跳跃参数一起验证过。首次游玩通常会因等待节拍而更慢。场景会在过关后逐渐恢复颜色。
 
----
+## 时间同步与声音
 
-<p align="center">
-  <i>The beat is a deadly laser.</i><br>
-  <b>Have fun playing!</b>
-</p>
+统一时钟位于 `campaign/beat_clock.gd`。每次房间重开记录单调系统时间，并补偿 `AudioServer.get_time_to_next_mix()` 和 `AudioServer.get_output_latency()`；判定、光桥、激光、提示均读取同一时间基准。暂停会同时冻结音乐与时钟。
+
+采用 Godot 对短音乐片段建议的[系统时钟同步方案](https://docs.godotengine.org/en/4.4/tutorials/audio/sync_with_audio.html)。这里的配乐是 16 秒无缝循环的原创合成试作曲，120 BPM；当前房间最长只需几十秒，未加入变速。源码、固定随机种子和生成方式在 `tools/generate_music.py`，仅依赖 Python 标准库。
+
+蓝牙耳机、电视和不同声卡可能需要校准。正校准值表示接受稍晚于节拍的输入；在标题或游玩时用 `[`、`]` 调整，范围 ±250 ms。设置保存在 Godot `user://treadlight.cfg`。
+
+## 结构
+
+| 文件 | 职责 |
+| --- | --- |
+| `campaign/player.gd` | 移动、地面起跳与实际起跳信号 |
+| `campaign/beat_clock.gd` | 音频时间基准、判定、去重和校准 |
+| `campaign/light_bridge.gd` | 四拍实体光桥、最后一拍闪烁 |
+| `campaign/laser.gd` | 一拍预警、一拍伤害的横向激光 |
+| `campaign/campaign.gd` | 三个房间、计分、流程、暂停与重试 |
+| `campaign/hud.gd` | 中文界面、节拍灯、结果反馈 |
+| `scripts/`、`scenes/`、`components/` | 保留的原版游戏及编辑器 |
+
+## 验证与导出
+
+```powershell
+# godot 可替换为本机 Godot console 可执行文件的完整路径。
+godot --headless --path . --import
+godot --headless --path . --script res://tests/run_tests.gd --fixed-fps 60
+# 或使用会检查运行时错误的封装：
+./tools/test.ps1 -Godot 'C:/path/to/Godot_v4.4.1-stable_win64_console.exe'
+```
+
+测试覆盖判定边界、校准、同拍去重、桥梁碰撞开关/过期、激光预警/伤害、真实地面起跳、空中输入、暂停恢复、失败、重试以及三关实际物理路线。自动路线只提供方向/跳跃输入，不传送角色，不关闭伤害；通过固定步长驱动共享时钟以保证结果可复现。测试脚本与截图脚本不会进入可玩包。
+
+截图由 `tests/capture.gd` 在 Godot OpenGL 渲染器下生成；游戏场景使用受控时间与位置展示光桥状态。UI 已检查中文显示、遮罩层级与主要文字范围。实际音频设备的听感与延迟仍需人工校准体验。
+
+GitHub Actions 会在推送后使用 Godot 4.4.1 执行导入和同一组测试。Windows 发布构建需要安装 4.4.1 导出模板，然后运行：
+
+```powershell
+New-Item -ItemType Directory -Force build
+godot --headless --path . --export-release 'Windows Desktop' build/Treadlight.exe
+```
+
+## 来源与许可
+
+原项目作者 **FireEntity1**，仓库：[lightbound-demo](https://github.com/FireEntity1/lightbound-demo)，原版游戏：[LIGHT//BOUND](https://fire-entity.itch.io/lightbound)。原始 Apache-2.0 许可保留在 `LICENSE`，署名见 `NOTICE`，字体及引擎许可见 `THIRD_PARTY_NOTICES.md` 和 `licenses/`。原 README 保存在 `docs/UPSTREAM_README.md`，原提交历史保留。
+
+本改版新增独立旅程模式和原创合成试作配乐。原音乐制作工程含 Windows 不支持的 `::` 目录名，已从当前树移除；它们不参与游戏运行，仍可从上游及 Git 历史获取。原工程的开发者统计插件已停用，原版编辑器的数据目录改为 Godot `user://lightbound-data`。参赛前请按赛事对复用代码的要求说明本项目来源。

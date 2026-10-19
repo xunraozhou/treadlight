@@ -1,6 +1,7 @@
+# Modified for Treadlight: store legacy editor data under Godot user://.
 extends Node
 
-var path = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS).path_join("lightbound-data")
+var path = "user://lightbound-data"
 
 var bpm = 120
 var beat = 0

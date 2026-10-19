@@ -1,3 +1,4 @@
+# Modified for Treadlight: add return entry for the new journey mode.
 extends Node2D
 
 var play = {
@@ -24,6 +25,15 @@ var startup_fade = true
 var title = false
 
 func _ready() -> void:
+	var journey_button := Button.new()
+	journey_button.text = "TREADLIGHT / JOURNEY"
+	journey_button.position = Vector2(70, 70)
+	journey_button.size = Vector2(330, 58)
+	journey_button.add_theme_font_size_override("font_size", 24)
+	journey_button.pressed.connect(func():
+		get_window().content_scale_size = Vector2i(1280, 720)
+		get_tree().change_scene_to_file("res://campaign/main.tscn"))
+	add_child(journey_button)
 	global.visualizer = true
 	global.add_hover_press_effect($play,true)
 	global.add_hover_press_effect($editor,true)

@@ -1,5 +1,8 @@
 # Godot 4+ specific ignores
 .godot/
+/song-projects/
+/build/
+*.tmp
 /android/
 song-projects/.DS_Store
 .DS_Store

@@ -1,0 +1,26 @@
+name: Godot gameplay checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  gameplay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Godot 4.4.1
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip -o "$RUNNER_TEMP/godot.zip"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          chmod +x "$RUNNER_TEMP/godot/Godot_v4.4.1-stable_linux.x86_64"
+          echo "$RUNNER_TEMP/godot" >> "$GITHUB_PATH"
+      - name: Import and simulate gameplay
+        shell: bash
+        run: |
+          set -euo pipefail
+          Godot_v4.4.1-stable_linux.x86_64 --headless --path . --import 2>&1 | tee import.log
+          Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tests/run_tests.gd --fixed-fps 60 2>&1 | tee tests.log
+          python3 -c "from pathlib import Path; logs = Path('import.log').read_text() + Path('tests.log').read_text(); assert 'ERROR:' not in logs, logs; assert '0 failures' in logs"
