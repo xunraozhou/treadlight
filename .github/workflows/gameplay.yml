@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Audit standalone source boundaries
+        run: python3 tools/audit_sources.py
       - name: Install Godot 4.4.1
         shell: bash
         run: |

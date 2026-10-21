@@ -15,21 +15,33 @@ func capture() -> void:
 	root.add_child(game)
 	await create_timer(0.3).timeout
 	await save_frame("title")
-	game.start_room(2)
+	game.tutorial()
+	await save_frame("tutorial")
+	game.to_menu()
+	game.start_room(0)
 	game.clock.stop()
-	game.clock.frozen_seconds = 6.55
-	game.player.position = Vector2(765, 485)
-	game.player.enabled = false
-	game.state = "paused"
-	game.bridges[0].activate(12.0)
-	game.scroll_x = 400.0
-	game.world.position.x = -400.0
-	game.state = "playing"
-	game.message = "准确  -12 ms  ·  光桥已唤醒 / 4 拍"
-	# Capture one ordinary gameplay frame with the light bridge active.
+	game.clock.frozen_seconds = 2.0
+	game.player.position = Vector2(715, 503)
+	game.player.automation = true
+	for i in range(3):
+		await step(0.0)
+	game.player.auto_direction = 1.0
+	game.player.auto_jump = true
+	for i in range(20):
+		await step()
+	# Both screenshots come from an actual takeoff/landing cycle.
 	await save_frame("gameplay")
+	for i in range(48):
+		await step()
+	game.player.auto_direction = 0.0
+	await save_frame("restored")
 	game.toggle_pause()
 	await save_frame("pause")
 	game.queue_free()
 	await process_frame
 	quit()
+
+func step(delta: float = 1.0 / 60.0) -> void:
+	game.clock.frozen_seconds += delta
+	await physics_frame
+	await process_frame

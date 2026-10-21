@@ -55,6 +55,13 @@ func run() -> void:
 	bridge.update_at(8.0)
 	await process_frame
 	check(not bridge.active and bridge.shape_node.disabled, "bridge disappears at exactly four beats")
+	check(not bridge.anchor(), "inactive light cannot be anchored")
+	bridge.activate(4.0)
+	check(bridge.anchor(), "a live bridge can become permanent")
+	check(not bridge.anchor(), "permanent bridge can be awarded only once")
+	bridge.update_at(100.0)
+	await process_frame
+	check(bridge.active and bridge.anchored and not bridge.shape_node.disabled, "anchored bridge stays solid beyond its old expiry")
 	game.start_room(1)
 	game.clock.stop()
 	game.clock.frozen_seconds = 2.1
@@ -122,6 +129,34 @@ func run() -> void:
 	game.player.position.y = 820.0
 	await tick(0.0)
 	check(game.state == "dead", "falling into void fails the room")
+	# These are real takeoff/landing cycles. Timing is perturbed only for the
+	# negative case, while the same CharacterBody2D trajectory stays in effect.
+	await landing_attempt(0.0, false)
+	check(game.room_anchors == 1 and game.bridges[0].anchored, "two-beat landing repairs the actual bridge")
+	var anchored_score: int = game.room_score
+	game.on_landing()
+	check(game.room_score == anchored_score, "landing callback cannot award the same repair twice")
+	game.start_room(0)
+	check(game.room_anchors == 0 and not game.bridges[0].anchored, "room retry resets permanent repair objectives")
+	await landing_attempt(0.23, false)
+	check(game.room_anchors == 0 and not game.bridges[0].anchored and game.bridges[0].active, "offbeat landing keeps only temporary light")
+	await landing_attempt(0.0, true)
+	check(game.room_anchors == 1, "bridge is repairable from the far shore after a miss")
+	game.start_room(0)
+	game.clock.stop()
+	game.clock.frozen_seconds = 2.1
+	game.player.position = Vector2(game.room_width - 128, 463)
+	await tick(0.0)
+	check(game.state == "playing", "goal stays locked without all restored resonance points")
+	game.to_menu()
+	game.tutorial()
+	await tick(0.0)
+	check(game.state == "help" and not game.player.enabled, "new tutorial works without restarting hidden physics")
+	game.to_menu()
+	var legacy_entry: bool = false
+	for child in game.ui.get_children():
+		legacy_entry = legacy_entry or (child is Button and "原版" in child.text)
+	check(not legacy_entry, "competition menu has no upstream game/editor entry")
 	game.completed_scores.clear()
 	# Automated playthrough uses normal motion and normal jump signals.
 	# The clock is stepped deterministically; physics and hazards remain enabled.
@@ -132,6 +167,24 @@ func run() -> void:
 	game.queue_free()
 	await process_frame
 	quit(1 if failures else 0)
+
+func landing_attempt(landing_offset: float, from_right: bool) -> void:
+	game.start_room(0)
+	game.clock.stop()
+	game.clock.frozen_seconds = 2.0
+	game.player.automation = true
+	var bridge: Node = game.bridges[0]
+	var launch_x: float = bridge.position.x + bridge.width + 50 if from_right else bridge.position.x - 65
+	game.player.position = Vector2(launch_x, bridge.position.y - 17)
+	for i in range(3):
+		await tick(0.0)
+	game.player.auto_direction = -1.0 if from_right else 1.0
+	game.player.auto_jump = true
+	await tick()
+	game.clock.frozen_seconds += landing_offset
+	for i in range(65):
+		await tick()
+	game.player.auto_direction = 0.0
 
 func traverse(room: int) -> void:
 	game.start_room(room)
@@ -167,5 +220,6 @@ func traverse(room: int) -> void:
 		await tick()
 	check(game.state == ("complete" if room == 2 else "clear"), "room %d can be completed through actual physics (x=%.0f, state=%s)" % [room + 1, game.player.position.x, game.state])
 	check(crossed_bridges.size() == game.bridges.size(), "room %d crosses each required light bridge" % (room + 1))
+	check(game.room_anchors == game.bridges.size(), "room %d restores every bridge through real beat landings" % (room + 1))
 	check(game.room_score >= game.bridges.size() * 60, "room %d awards rhythm score" % (room + 1))
 	print("ROOM %d: %s, %.1fs simulated, score=%d, x=%.0f" % [room + 1, game.state, ticks / 60.0, game.room_score, game.player.position.x])

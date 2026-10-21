@@ -1,8 +1,11 @@
 extends CharacterBody2D
 signal took_off
+signal landed
 const SPEED: float = 140.0
 const JUMP_SPEED: float = -530.0
-const GRAVITY: float = 1550.0
+# A level-ground jump lasts two beats at 120 BPM. Both ordinary and rhythm
+# jumps use this same trajectory; timing changes the world, not jump height.
+const GRAVITY: float = 1060.0
 var enabled: bool = false
 var halo_phase: float = 0.0
 var accent := Color("72f5d3")
@@ -29,13 +32,16 @@ func _physics_process(delta: float) -> void:
 	auto_jump = false
 	velocity.x = direction * SPEED
 	velocity.y += GRAVITY * delta
-	var launched := wants_jump and is_on_floor()
+	var was_grounded := is_on_floor()
+	var launched := wants_jump and was_grounded
 	if launched:
 		velocity.y = JUMP_SPEED
 	move_and_slide()
 	# Emit only after a real grounded launch survives collision resolution.
 	if launched and velocity.y < 0.0 and not is_on_floor():
 		took_off.emit()
+	if not was_grounded and is_on_floor():
+		landed.emit()
 	trail.push_front(global_position)
 	if trail.size() > 10:
 		trail.pop_back()
