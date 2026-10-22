@@ -14,19 +14,18 @@
 | 项目图标 | `icon.svg` | 本项目生成的矢量几何图形 |
 | 120 BPM 试作配乐 | `campaign/audio/awakening.wav` | `tools/generate_music.py` 用 Python 标准库合成，16 秒循环，无网络采样 |
 
-以上文件由本项目迭代生成，开发过程中使用了 AI 辅助编程与设计。工程中没有随包提供的网络贴图、上游游戏音乐或单独下载的音效库。
+以上文件由本项目迭代生成，开发过程中使用了 AI 辅助编程与设计。
 
-## 字体、引擎与研究参考
+## 字体与引擎
 
 | 类别 | 来源及处理 |
 | --- | --- |
 | 界面字体 | 请求操作系统已有字体，不随包分发字体文件 |
 | Godot 引擎 | Godot 4.4.1，MIT 许可；引擎与内置依赖声明在 `licenses/` |
-| 玩法研究参考 | [FireEntity1 / LIGHT//BOUND](https://github.com/FireEntity1/lightbound-demo)；v0.1 曾保留其工程，v0.2 当前运行工程及发布包已移除其代码与素材，旧历史保留供追溯 |
 | 文档截图 | `tests/capture.gd` 在受控时间下驱动实际角色起落，由 Godot 渲染后采集，位于 `docs/` |
 
 代码许可见 [LICENSE](../LICENSE)，详细来源声明见 [NOTICE](../NOTICE) 和 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。
 
 ## 素材导出
 
-图标位于 `icon.svg`，音轨位于 `campaign/audio/awakening.wav`；几何场景通过代码实时绘制，静态展示可使用 `docs/` 中的实际渲染截图。复用时请保留许可、AI 辅助和研究参考记录。新增外部素材后，应补充作者、来源、许可和使用位置。
+图标位于 `icon.svg`，音轨位于 `campaign/audio/awakening.wav`；几何场景通过代码实时绘制，静态展示可使用 `docs/` 中的实际渲染截图。复用时请保留许可与开发辅助记录。新增外部素材后，应补充作者、来源、许可和使用位置。

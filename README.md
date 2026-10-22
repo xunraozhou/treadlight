@@ -73,6 +73,6 @@ Windows 试玩包无需安装 Godot。开场有四拍准备，之后即可移动
 
 ## 许可与致谢
 
-项目代码采用 [Apache-2.0](LICENSE)。玩法研究参考为 [FireEntity1 / LIGHT//BOUND](https://github.com/FireEntity1/lightbound-demo)。
+项目代码采用 [Apache-2.0](LICENSE)。
 
 代码、图形、音轨与开发辅助方式的来源记录见[素材与来源清单](docs/assets.md)及 [NOTICE](NOTICE)；Godot 引擎和内置依赖声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

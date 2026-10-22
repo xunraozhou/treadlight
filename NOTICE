@@ -1,13 +1,9 @@
 Treadlight / 踏光：两拍回响 v0.2
 
-The current runtime project is independently implemented in campaign/.
-No LIGHT//BOUND game scripts, scenes, music, fonts or editor are shipped in
-the v0.2 runtime or source archives. Godot is an engine dependency.
-
-Inspiration/reference: LIGHT//BOUND by FireEntity1
-https://github.com/FireEntity1/lightbound-demo
-The earlier v0.1 derivative and inherited Git history remain available for
-transparent provenance. Use only the v0.2 package for reviewing this version.
+The runtime implementation is in campaign/.
+Project code is distributed under the Apache License 2.0; see LICENSE.
+Godot Engine is a runtime dependency. Its MIT license and bundled dependency
+notices are included in licenses/ and THIRD_PARTY_NOTICES.md.
 
 The project was created with AI assistance. Competition eligibility for AI
 assistance is not specified in the supplied manual and requires confirmation.
