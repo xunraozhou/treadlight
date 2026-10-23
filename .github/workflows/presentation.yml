@@ -1,0 +1,37 @@
+name: Presentation export
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/presentation/*.pptx'
+      - 'docs/presentation/*.docx'
+      - 'tools/validate_presentation.py'
+      - '.github/workflows/presentation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install document renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-impress libreoffice-writer fonts-noto-cjk poppler-utils
+          python -m pip install --disable-pip-version-check Pillow
+      - name: Validate packages and render PDFs
+        run: python tools/validate_presentation.py
+      - name: Save reviewed previews and PDF copies
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/presentation/previews docs/presentation/Treadlight-presentation.pdf docs/presentation/Treadlight-speech.pdf docs/presentation/validation.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Export presentation previews and speech PDF"
+            git push origin HEAD:main
+          fi
