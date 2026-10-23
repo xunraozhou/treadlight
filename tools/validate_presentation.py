@@ -30,7 +30,7 @@ def validate_package(path):
                     for item in root:
                         if item.get("TargetMode") == "External":
                             continue
-                        target = posixpath.normpath(posixpath.join(base, item.get("Target", "")))
+                        target = posixpath.normpath(posixpath.join(base, item.get("Target", ""))).lstrip("/")
                         assert target in names, f"Missing relationship target: {target}"
         return len(names)
 

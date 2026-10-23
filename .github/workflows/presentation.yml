@@ -1,4 +1,4 @@
-name: Presentation export
+name: Presentation checks
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   render:
@@ -26,12 +26,12 @@ jobs:
           python -m pip install --disable-pip-version-check Pillow
       - name: Validate packages and render PDFs
         run: python tools/validate_presentation.py
-      - name: Save reviewed previews and PDF copies
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/presentation/previews docs/presentation/Treadlight-presentation.pdf docs/presentation/Treadlight-speech.pdf docs/presentation/validation.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Export presentation previews and speech PDF"
-            git push origin HEAD:main
-          fi
+      - name: Keep compatibility render as a check artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: presentation-compatibility-check
+          path: |
+            docs/presentation/previews
+            docs/presentation/*.pdf
+            docs/presentation/validation.json
+          retention-days: 14

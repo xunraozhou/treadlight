@@ -44,6 +44,10 @@
 
 更完整的依赖说明见[第三方声明](../THIRD_PARTY_NOTICES.md)。
 
+## 演示稿中的外部素材
+
+项目演示稿使用 Taiki Ishikawa 的 Unsplash 光轨摄影与 Lucide 线性图标，分别遵循 Unsplash License 和随附的 ISC / Feather MIT 许可。它们用于封面和说明图标，未加入游戏运行画面。具体作品链接、作者、许可、使用页码以及后续可选素材库见[演示素材清单](presentation/asset-sources.md)。
+
 ## 五、交付整理建议
 
 将以下实际文件随最终材料提供，便于查看和复核：

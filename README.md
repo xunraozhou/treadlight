@@ -8,7 +8,7 @@
 
 **v0.2 · Windows x64 · Godot 4.4.1 / GDScript**
 
-[下载试玩](https://github.com/xunraozhou/treadlight/releases/tag/v0.2.0) · [游戏介绍](docs/project-introduction.md) · [游戏策划](docs/game-design.md) · [开发文档](docs/development.md)
+[下载试玩](https://github.com/xunraozhou/treadlight/releases/tag/v0.2.0) · [游戏介绍](docs/project-introduction.md) · [游戏策划](docs/game-design.md) · [项目演示](docs/presentation/README.md) · [开发文档](docs/development.md)
 
 ![踏光：两拍回响标题画面](docs/title.png)
 
