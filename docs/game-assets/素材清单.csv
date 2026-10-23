@@ -1,0 +1,23 @@
+﻿归档路径,原工程路径,类别,用途,格式,规格,来源,许可说明
+art/icon.svg,icon.svg,游戏图标,项目与程序图标,SVG,128 × 128；viewBox 0 0 128 128,项目内矢量几何图形,来源见项目记录；代码许可与依赖声明随包保留
+art/screenshots/title.png,docs/title.png,游戏画面,标题与作品视觉,PNG,1280 × 720；RGBA,tests/capture.gd 采集 Godot 实际渲染画面,来源见项目记录；系统字体文件不随包分发
+art/screenshots/gameplay.png,docs/gameplay.png,游戏画面,随拍起跳，临时青桥,PNG,1280 × 720；RGBA,tests/capture.gd 采集 Godot 实际渲染画面,来源见项目记录；系统字体文件不随包分发
+art/screenshots/restored.png,docs/restored.png,游戏画面,落拍修复，固定金桥,PNG,1280 × 720；RGBA,tests/capture.gd 采集 Godot 实际渲染画面,来源见项目记录；系统字体文件不随包分发
+art/screenshots/tutorial.png,docs/tutorial.png,游戏画面,游戏内玩法教学,PNG,1280 × 720；RGBA,tests/capture.gd 采集 Godot 实际渲染画面,来源见项目记录；系统字体文件不随包分发
+art/screenshots/pause.png,docs/pause.png,游戏画面,暂停与操作提示,PNG,1280 × 720；RGBA,tests/capture.gd 采集 Godot 实际渲染画面,来源见项目记录；系统字体文件不随包分发
+audio/awakening.wav,campaign/audio/awakening.wav,循环配乐,120 BPM 游戏主配乐,WAV / PCM,"16 秒；44,100 Hz；单声道；16 位；32 拍",tools/generate_music.py 使用 Python 标准库合成，无网络采样,生成源码采用 Apache-2.0；保留项目来源记录
+source/campaign/campaign.gd,campaign/campaign.gd,实现源码,场景配色、背景遗迹、平台、出口与房间流程,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/player.gd,campaign/player.gd,实现源码,角色、运动轨迹与节拍光环,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/light_bridge.gd,campaign/light_bridge.gd,实现源码,青桥、金桥、倒计时与修复波纹,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/laser.gd,campaign/laser.gd,实现源码,激光发射器、预警线与危险光束,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/hud.gd,campaign/hud.gd,实现源码,标题、教学、节拍灯、HUD与暂停结算,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/beat_clock.gd,campaign/beat_clock.gd,实现源码,配乐播放、循环与节拍同步,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/campaign/main.tscn,campaign/main.tscn,实现源码,主场景入口与节点连接,tscn,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/project.godot,project.godot,实现源码,原工程配置快照,godot,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/tests/capture.gd,tests/capture.gd,实现源码,受控驱动角色并保存实际画面,gd,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+source/tools/generate_music.py,tools/generate_music.py,实现源码,合成鼓点、踩镲、低音与旋律，生成循环音轨,py,原工程文件快照,当前项目仓库,Apache-2.0，见 licenses/LICENSE
+licenses/LICENSE,LICENSE,许可声明,随作品保留的项目与引擎声明,文本,原文保留,当前项目仓库,以文件原文为准
+licenses/NOTICE,NOTICE,许可声明,随作品保留的项目与引擎声明,文本,原文保留,当前项目仓库,以文件原文为准
+licenses/Godot-LICENSE.txt,licenses/Godot-LICENSE.txt,许可声明,随作品保留的项目与引擎声明,文本,原文保留,当前项目仓库,以文件原文为准
+licenses/Godot-COPYRIGHT.txt,licenses/Godot-COPYRIGHT.txt,许可声明,随作品保留的项目与引擎声明,文本,原文保留,当前项目仓库,以文件原文为准
+licenses/THIRD_PARTY_NOTICES.md,THIRD_PARTY_NOTICES.md,许可声明,第三方来源说明,Markdown,仅调整相对链接以适配本包,当前项目仓库,以声明原文为准
