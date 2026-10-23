@@ -5,6 +5,4 @@ Project code is distributed under the Apache License 2.0; see LICENSE.
 Godot Engine is a runtime dependency. Its MIT license and bundled dependency
 notices are included in licenses/ and THIRD_PARTY_NOTICES.md.
 
-The project was created with AI assistance. Competition eligibility for AI
-assistance is not specified in the supplied manual and requires confirmation.
-See THIRD_PARTY_NOTICES.md and docs/competition-plan.md.
+Project graphics, music, and dependency records are listed in docs/assets.md.

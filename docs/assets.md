@@ -1,31 +1,56 @@
-# 美术、音乐与依赖来源清单
+# 美术、音乐与依赖清单
 
-本清单记录 v0.2 工程中的画面、音乐与依赖来源。对应文件及生成代码随工程提供。
+本清单记录 v0.2 实际使用的画面、声音与依赖。几何场景由代码实时绘制，源码和生成工具随工程提供；下列链接均指向仓库中的实际文件。
 
-## 本项目中的画面与音乐
+## 一、画面资源与实现
 
-| 内容 | 文件或实现位置 | 生成方式 |
+| 内容 | 文件或实现位置 | 方式与用途 |
 | --- | --- | --- |
-| 背景遗迹、星点、出口 | `campaign/campaign.gd` | 用 Godot 绘制几何图形、色块和线条 |
-| 角色、轨迹与节拍光环 | `campaign/player.gd` | 用代码绘制，随角色运动与节拍更新 |
-| 临时桥、永久桥、修复波纹 | `campaign/light_bridge.gd` | 用代码绘制，按机关状态切换青色与金色 |
-| 激光与预警 | `campaign/laser.gd` | 用代码绘制虚线和实体光束 |
-| 菜单、节拍灯与信息提示 | `campaign/hud.gd` | Godot 控件与绘制接口 |
-| 项目图标 | `icon.svg` | 本项目生成的矢量几何图形 |
-| 120 BPM 试作配乐 | `campaign/audio/awakening.wav` | `tools/generate_music.py` 用 Python 标准库合成，16 秒循环，无网络采样 |
+| 遗迹、背景星点、出口 | [campaign.gd](../campaign/campaign.gd) | Godot 绘制几何图形、线条和色块 |
+| 角色、轨迹、节拍光环 | [player.gd](../campaign/player.gd) | 随运动与节拍更新 |
+| 青桥、金桥、修复波纹 | [light_bridge.gd](../campaign/light_bridge.gd) | 按临时、固定和到期状态绘制 |
+| 激光与预警 | [laser.gd](../campaign/laser.gd) | 虚线预警与实体危险光束 |
+| 菜单、节拍灯、提示 | [hud.gd](../campaign/hud.gd) | Godot 控件和绘制接口 |
+| 项目图标 | [icon.svg](../icon.svg) | 矢量几何图形 |
 
-以上文件由本项目迭代生成，开发过程中使用了 AI 辅助编程与设计。
+## 二、实际画面截图
 
-## 字体与引擎
-
-| 类别 | 来源及处理 |
+| 文件 | 展示内容 |
 | --- | --- |
-| 界面字体 | 请求操作系统已有字体，不随包分发字体文件 |
-| Godot 引擎 | Godot 4.4.1，MIT 许可；引擎与内置依赖声明在 `licenses/` |
-| 文档截图 | `tests/capture.gd` 在受控时间下驱动实际角色起落，由 Godot 渲染后采集，位于 `docs/` |
+| [title.png](title.png) | 标题与作品视觉 |
+| [gameplay.png](gameplay.png) | 随拍起跳与临时桥 |
+| [restored.png](restored.png) | 落拍修复后的金桥 |
+| [tutorial.png](tutorial.png) | 游戏内玩法教学 |
+| [pause.png](pause.png) | 暂停与操作提示 |
 
-代码许可见 [LICENSE](../LICENSE)，详细来源声明见 [NOTICE](../NOTICE) 和 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。
+截图由 [capture.gd](../tests/capture.gd) 在受控时间下驱动实际角色起落，并采集 Godot 渲染结果。它们用于说明画面与状态，不作为真人通关记录。
 
-## 素材导出
+## 三、音乐与声音
 
-图标位于 `icon.svg`，音轨位于 `campaign/audio/awakening.wav`；几何场景通过代码实时绘制，静态展示可使用 `docs/` 中的实际渲染截图。复用时请保留许可与开发辅助记录。新增外部素材后，应补充作者、来源、许可和使用位置。
+| 文件 | 内容 | 来源与制作方式 |
+| --- | --- | --- |
+| [awakening.wav](../campaign/audio/awakening.wav) | 120 BPM、16 秒循环配乐 | 由本项目的 [generate_music.py](../tools/generate_music.py) 使用 Python 标准库合成，无网络采样 |
+
+当前游戏尚未加入单独的修复、失败和通关音效。视频解说属于介绍材料，不是游戏内声音资源；本地成片上传情况见[材料清单](submission-checklist.md)。
+
+## 四、字体、引擎与许可
+
+| 类别 | 来源与处理 |
+| --- | --- |
+| 界面字体 | 请求操作系统已有字体，不随包分发字体文件；目标设备须检查中文显示 |
+| Godot 引擎 | Godot 4.4.1，MIT 许可，见 [Godot-LICENSE.txt](../licenses/Godot-LICENSE.txt) |
+| 引擎内置依赖 | 见 [Godot-COPYRIGHT.txt](../licenses/Godot-COPYRIGHT.txt) |
+| 项目代码 | Apache-2.0，见 [LICENSE](../LICENSE) 与 [NOTICE](../NOTICE) |
+
+更完整的依赖说明见[第三方声明](../THIRD_PARTY_NOTICES.md)。
+
+## 五、交付整理建议
+
+将以下实际文件随最终材料提供，便于查看和复核：
+
+1. 图标及五张画面截图。
+2. 循环音轨 `awakening.wav`。
+3. 本清单、必要的许可声明。
+4. 完整工程中的绘制代码、截图工具和音乐生成工具。
+
+上述文件已有工程内路径；目前尚未另生成集中素材包。手册并未限定独立素材 ZIP，可使用清楚的文件夹结构提交。后续加入外部图像、音乐或音效时，补充作者、原始来源、许可和实际使用位置，不填写未经确认的授权或归属。

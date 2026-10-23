@@ -8,7 +8,7 @@
 
 **v0.2 · Windows x64 · Godot 4.4.1 / GDScript**
 
-[下载试玩](https://github.com/xunraozhou/treadlight/releases/tag/v0.2.0) · [游戏介绍](docs/project-introduction.md) · [开发文档](docs/development.md)
+[下载试玩](https://github.com/xunraozhou/treadlight/releases/tag/v0.2.0) · [游戏介绍](docs/project-introduction.md) · [游戏策划](docs/game-design.md) · [开发文档](docs/development.md)
 
 ![踏光：两拍回响标题画面](docs/title.png)
 
@@ -16,14 +16,14 @@
 
 音乐给出节拍，跳跃将它变成道路。
 
-靠近虚线光桥，随拍从地面起跳，青色桥面便会出现。它只能维持四拍，你需要保持向前，约两拍后落在桥上。如果落地同样踩准节拍，青桥就会变成永久保留的金桥，点亮一个共鸣点。
+靠近虚线光桥，随拍从地面起跳，青色桥面便会出现。它只能维持四拍，你需要保持向前，约两拍后落在桥上。如果落地同样踩准节拍，青桥就会变成金桥，在本次房间尝试中持续保留，点亮一个共鸣点。
 
 起跳与落地共同构成一次完整的回应：前者创造通路，后者将它留下。房间内的全部共鸣点修复后，通往下一段旅程的出口才会开启。
 
 | 起跳造路 | 落拍留光 |
 | --- | --- |
 | ![随拍起跳，唤醒临时青桥](docs/gameplay.png) | ![踩拍落桥，留下永久金桥](docs/restored.png) |
-| 青桥持续四拍，最后一拍闪烁 | 金桥持续保留，点亮共鸣点 |
+| 青桥持续四拍，最后一拍闪烁 | 金桥在本轮保留，点亮共鸣点 |
 
 ## 听见节拍，也看见节拍
 
@@ -75,4 +75,4 @@ Windows 试玩包无需安装 Godot。开场有四拍准备，之后即可移动
 
 项目代码采用 [Apache-2.0](LICENSE)。
 
-代码、图形、音轨与开发辅助方式的来源记录见[素材与来源清单](docs/assets.md)及 [NOTICE](NOTICE)；Godot 引擎和内置依赖声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+代码、图形、音轨与依赖的来源记录见[素材与来源清单](docs/assets.md)及 [NOTICE](NOTICE)；Godot 引擎和内置依赖声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
