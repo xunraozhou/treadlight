@@ -2,7 +2,7 @@
 
 《踏光：两拍回响》v0.2，整理日期：**2026 年 10 月 25 日**。团队成员为严楷哲、沈语雯、李星莹，队长为严楷哲。
 
-**[下载统一作品包（人员分工详版）](https://github.com/xunraozhou/treadlight/releases/download/v0.2.0/Treadlight-submission-2026-10-25-r3.zip)**
+**[下载统一作品包（宋体排版版）](https://github.com/xunraozhou/treadlight/releases/download/v0.2.0/Treadlight-submission-2026-10-25-r4.zip)**
 
 下载后完整解压，按以下顺序查看。五类内容已直接放入编号目录，无需再拆分其他 ZIP。
 
@@ -13,6 +13,8 @@
 | 3 | `03_游戏可执行文件` | `Treadlight.exe`、`Treadlight.pck`、开始试玩说明及许可声明；Windows x64 |
 | 4 | `04_美术音效作品` | 图标、5 张实际截图、16 秒循环配乐、相关源码、素材用途与来源清单 |
 | 5 | `05_游戏工程文件` | 完整工程快照、源代码、资源、工具、测试和项目文档；从 `project.godot` 导入 |
+
+策划案采用宋体正文、黑体标题，英文与数字使用 Times New Roman；流程图和表格同步调整，仍为22页。
 
 根目录的 `文件说明.txt` 提供查看顺序、启动方式与版本信息。
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-25T12:47:32.164196</dc:date>
+    <dc:date>2026-10-25T14:10:46.460887</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,37 +32,37 @@ z
    <g id="line2d_1">
     <path d="M 82.579592 238.419106
 L 82.579592 79.170353
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 182.497959 238.419106
 L 182.497959 79.170353
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 282.416327 238.419106
 L 282.416327 79.170353
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 382.334694 238.419106
 L 382.334694 79.170353
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_5">
     <path d="M 482.253061 238.419106
 L 482.253061 79.170353
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #dce7e8; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="patch_2">
     <path d="M 282.416327 131.383059
 Q 282.416327 135.821139 282.416327 138.805775
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 285.016327 133.605775
 L 282.416327 138.805775
 L 279.816327 133.605775
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: #ba8a2d; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p80cba44115)" style="fill: #ba8a2d; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 82.579592 207.091482
@@ -70,7 +70,7 @@ L 382.334694 207.091482
 L 382.334694 185.162146
 L 82.579592 185.162146
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
+" clip-path="url(#p80cba44115)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 382.334694 207.091482
@@ -78,7 +78,7 @@ L 482.253061 207.091482
 L 482.253061 185.162146
 L 382.334694 185.162146
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: url(#h6588a6ad67); stroke: #2b9b91; stroke-linejoin: miter"/>
+" clip-path="url(#p80cba44115)" style="fill: url(#hbf715901ac); stroke: #2b9b91; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 82.579592 246.251012
@@ -86,7 +86,7 @@ L 282.416327 246.251012
 L 282.416327 224.321675
 L 82.579592 224.321675
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
+" clip-path="url(#p80cba44115)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 282.416327 246.251012
@@ -94,17 +94,17 @@ L 507.232653 246.251012
 L 507.232653 224.321675
 L 282.416327 224.321675
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: #faf2df; stroke: #ba8a2d; stroke-linejoin: miter"/>
+" clip-path="url(#p80cba44115)" style="fill: #faf2df; stroke: #ba8a2d; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 507.232653 235.286344
 Q 522.220408 235.286344 535.754719 235.286344
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 530.554719 232.686344
 L 535.754719 235.286344
 L 530.554719 237.886344
 z
-" clip-path="url(#pcb27cd19b3)" style="fill: #ba8a2d; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p80cba44115)" style="fill: #ba8a2d; stroke: #ba8a2d; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="line2d_6">
     <path d="M 82.579592 141.8256
@@ -144,63 +144,63 @@ L 270.345651 134.121045
 L 277.051582 138.279059
 L 282.416327 141.8256
 L 282.416327 141.8256
-" clip-path="url(#pcb27cd19b3)" style="fill: none; stroke: #173d45; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#p80cba44115)" style="fill: none; stroke: #173d45; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="82.579592" y="67.36201" transform="rotate(-0 82.579592 67.36201)">0 拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="82.579592" y="68.072947" transform="rotate(-0 82.579592 68.072947)">0 拍</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #61777d" x="82.579592" y="85.636457" transform="rotate(-0 82.579592 85.636457)">0 s</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #61777d" x="82.579592" y="85.882551" transform="rotate(-0 82.579592 85.882551)">0 s</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="182.497959" y="67.36201" transform="rotate(-0 182.497959 67.36201)">1 拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="182.497959" y="68.072947" transform="rotate(-0 182.497959 68.072947)">1 拍</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #61777d" x="182.497959" y="85.636457" transform="rotate(-0 182.497959 85.636457)">0.5 s</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #61777d" x="182.497959" y="85.882551" transform="rotate(-0 182.497959 85.882551)">0.5 s</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="282.416327" y="67.36201" transform="rotate(-0 282.416327 67.36201)">2 拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="282.416327" y="68.072947" transform="rotate(-0 282.416327 68.072947)">2 拍</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #61777d" x="282.416327" y="85.636457" transform="rotate(-0 282.416327 85.636457)">1 s</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #61777d" x="282.416327" y="85.882551" transform="rotate(-0 282.416327 85.882551)">1 s</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="382.334694" y="67.36201" transform="rotate(-0 382.334694 67.36201)">3 拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="382.334694" y="68.072947" transform="rotate(-0 382.334694 68.072947)">3 拍</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #61777d" x="382.334694" y="85.636457" transform="rotate(-0 382.334694 85.636457)">1.5 s</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #61777d" x="382.334694" y="85.882551" transform="rotate(-0 382.334694 85.882551)">1.5 s</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="482.253061" y="67.36201" transform="rotate(-0 482.253061 67.36201)">4 拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="482.253061" y="68.072947" transform="rotate(-0 482.253061 68.072947)">4 拍</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #61777d" x="482.253061" y="85.636457" transform="rotate(-0 482.253061 85.636457)">2 s</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #61777d" x="482.253061" y="85.882551" transform="rotate(-0 482.253061 85.882551)">2 s</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="82.579592" y="163.433389" transform="rotate(-0 82.579592 163.433389)">起跳</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="82.579592" y="164.199014" transform="rotate(-0 82.579592 164.199014)">起跳</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="282.416327" y="163.433389" transform="rotate(-0 282.416327 163.433389)">同高落地约两拍</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="282.416327" y="164.253701" transform="rotate(-0 282.416327 164.253701)">同高落地约两拍</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="232.457143" y="199.982283" transform="rotate(-0 232.457143 199.982283)">未固定：青桥继续存在</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="232.457143" y="200.829939" transform="rotate(-0 232.457143 200.829939)">未固定：青桥继续存在</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="432.293878" y="199.982283" transform="rotate(-0 432.293878 199.982283)">末拍闪烁</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="432.293878" y="200.747908" transform="rotate(-0 432.293878 200.747908)">末拍闪烁</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; fill: #173d45" transform="translate(497.240816 190.688033)">到期</text>
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; fill: #173d45" transform="translate(497.240816 209.276533)">消失</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; fill: #173d45" transform="translate(497.240816 192.38072)">到期</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; fill: #173d45" transform="translate(497.240816 208.951033)">消失</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="182.497959" y="239.141812" transform="rotate(-0 182.497959 239.141812)">落拍成功时</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="182.497959" y="239.880094" transform="rotate(-0 182.497959 239.880094)">落拍成功时</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="395.324082" y="239.141812" transform="rotate(-0 395.324082 239.141812)">金桥在本轮持续保留</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="395.324082" y="239.989469" transform="rotate(-0 395.324082 239.989469)">金桥在本轮持续保留</text>
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="C0_0_5921125255" d="M 0 3.162278
+     <path id="C0_0_e33b3b159d" d="M 0 3.162278
 C 0.838646 3.162278 1.643056 2.82908 2.236068 2.236068
 C 2.82908 1.643056 3.162278 0.838646 3.162278 -0
 C 3.162278 -0.838646 2.82908 -1.643056 2.236068 -2.236068
@@ -212,11 +212,11 @@ C -1.643056 2.82908 -0.838646 3.162278 0 3.162278
 z
 "/>
     </defs>
-    <g clip-path="url(#pcb27cd19b3)">
-     <use xlink:href="#C0_0_5921125255" x="82.579592" y="141.8256" style="fill: #2b9b91; stroke: #2b9b91"/>
+    <g clip-path="url(#p80cba44115)">
+     <use xlink:href="#C0_0_e33b3b159d" x="82.579592" y="141.8256" style="fill: #2b9b91; stroke: #2b9b91"/>
     </g>
-    <g clip-path="url(#pcb27cd19b3)">
-     <use xlink:href="#C0_0_5921125255" x="282.416327" y="141.8256" style="fill: #ba8a2d; stroke: #ba8a2d"/>
+    <g clip-path="url(#p80cba44115)">
+     <use xlink:href="#C0_0_e33b3b159d" x="282.416327" y="141.8256" style="fill: #ba8a2d; stroke: #ba8a2d"/>
     </g>
    </g>
   </g>
@@ -227,7 +227,7 @@ L 443.52 384.714
 L 443.52 367.4682
 L 132.48 367.4682
 z
-" clip-path="url(#p586297d8d2)" style="fill: #faf2df; stroke: #ba8a2d; stroke-linejoin: miter"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: #faf2df; stroke: #ba8a2d; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 205.056 384.714
@@ -235,81 +235,81 @@ L 370.944 384.714
 L 370.944 367.4682
 L 205.056 367.4682
 z
-" clip-path="url(#p586297d8d2)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: #e3f3f0; stroke: #2b9b91; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_7">
     <path d="M 132.48 387.8496
 L 132.48 365.27328
-" clip-path="url(#p586297d8d2)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="line2d_8">
     <path d="M 205.056 387.8496
 L 205.056 365.27328
-" clip-path="url(#p586297d8d2)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="line2d_9">
     <path d="M 288 387.8496
 L 288 365.27328
-" clip-path="url(#p586297d8d2)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="line2d_10">
     <path d="M 370.944 387.8496
 L 370.944 365.27328
-" clip-path="url(#p586297d8d2)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="line2d_11">
     <path d="M 443.52 387.8496
 L 443.52 365.27328
-" clip-path="url(#p586297d8d2)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#p1e05aecdd8)" style="fill: none; stroke: #61777d; stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="text_18">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="288" y="379.789789" transform="rotate(-0 288 379.789789)">准确</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="288" y="380.555414" transform="rotate(-0 288 380.555414)">准确</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="168.768" y="379.789789" transform="rotate(-0 168.768 379.789789)">良好</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="168.768" y="380.555414" transform="rotate(-0 168.768 380.555414)">良好</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="407.232" y="379.789789" transform="rotate(-0 407.232 379.789789)">良好</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="407.232" y="380.555414" transform="rotate(-0 407.232 380.555414)">良好</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="132.48" y="400.484749" transform="rotate(-0 132.48 400.484749)">-150</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="132.48" y="400.730842" transform="rotate(-0 132.48 400.730842)">-150</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="205.056" y="400.484749" transform="rotate(-0 205.056 400.484749)">-80</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="205.056" y="400.730842" transform="rotate(-0 205.056 400.730842)">-80</text>
    </g>
    <g id="text_23">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="288" y="400.484749" transform="rotate(-0 288 400.484749)">0</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="288" y="400.730842" transform="rotate(-0 288 400.730842)">0</text>
    </g>
    <g id="text_24">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="370.944" y="400.484749" transform="rotate(-0 370.944 400.484749)">+80</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="370.944" y="400.730842" transform="rotate(-0 370.944 400.730842)">+80</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="443.52" y="400.484749" transform="rotate(-0 443.52 400.484749)">+150</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="443.52" y="400.730842" transform="rotate(-0 443.52 400.730842)">+150</text>
    </g>
    <g id="text_26">
-    <text style="font-weight: 700; font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #173d45" x="288" y="351.569389" transform="rotate(-0 288 351.569389)">相对最近节拍的判定窗口（毫秒）</text>
+    <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: middle; fill: #173d45" x="288" y="352.389701" transform="rotate(-0 288 352.389701)">相对最近节拍的判定窗口（毫秒）</text>
    </g>
   </g>
   <g id="text_27">
-   <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #173d45" x="28.8" y="28.86075" transform="rotate(-0 28.8 28.86075)">两拍起落与四拍光桥</text>
+   <text style="font-size: 18px; font-family: 'SimHei'; text-anchor: start; fill: #173d45" x="28.8" y="28.81575" transform="rotate(-0 28.8 28.81575)">两拍起落与四拍光桥</text>
   </g>
   <g id="text_28">
-   <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #61777d" x="28.8" y="446.22" transform="rotate(-0 28.8 446.22)">120 BPM：每拍 0.5 秒。四拍从实际激活时刻起算。</text>
+   <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: start; fill: #61777d" x="28.8" y="446.22" transform="rotate(-0 28.8 446.22)">120 BPM：每拍 0.5 秒。四拍从实际激活时刻起算。</text>
   </g>
   <g id="text_29">
-   <text style="font-size: 14px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #61777d" x="28.8" y="465.516" transform="rotate(-0 28.8 465.516)">时间轴为同高起落示意；起跳早晚、落点高度与碰撞会改变落地时刻。</text>
+   <text style="font-size: 14px; font-family: 'SimSun', 'Times New Roman'; text-anchor: start; fill: #61777d" x="28.8" y="465.516" transform="rotate(-0 28.8 465.516)">时间轴为同高起落示意；起跳早晚、落点高度与碰撞会改变落地时刻。</text>
   </g>
  </g>
  <defs>
-  <clipPath id="pcb27cd19b3">
+  <clipPath id="p80cba44115">
    <rect x="57.6" y="53.064" width="489.6" height="221.904"/>
   </clipPath>
-  <clipPath id="p586297d8d2">
+  <clipPath id="p1e05aecdd8">
    <rect x="80.64" y="337.68" width="414.72" height="62.712"/>
   </clipPath>
  </defs>
  <defs>
-  <pattern id="h6588a6ad67" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+  <pattern id="hbf715901ac" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
    <rect x="0" y="0" width="73" height="73" fill="#e3f3f0"/>
    <path d="M -36 36
 L 36 -36
