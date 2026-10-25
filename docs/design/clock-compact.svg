@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-25T14:46:20.458854</dc:date>
+    <dc:date>2026-10-25T15:00:01.664262</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,17 +35,17 @@ L 511.488 78.7104
 L 511.488 19.9584
 L 64.512 19.9584
 z
-" clip-path="url(#pb873719464)" style="fill: #edf3f6; stroke: #77909b; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #edf3f6; stroke: #77909b; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 288 81.054844
 Q 288 94.954597 288 107.624512
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 290.4 102.824512
 L 288 107.624512
 L 285.6 102.824512
 z
-" clip-path="url(#pb873719464)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 120.384 170.9856
@@ -53,17 +53,17 @@ L 455.616 170.9856
 L 455.616 111.5424
 L 120.384 111.5424
 z
-" clip-path="url(#pb873719464)" style="fill: #244e60; stroke: #244e60; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #e8eef1; stroke: #77909b; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 77.0832 205.474219
 Q 77.0832 217.98696 77.0832 229.269864
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 79.4832 224.469864
 L 77.0832 229.269864
 L 74.6832 224.469864
 z
-" clip-path="url(#pb873719464)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
     <path d="M 11.4336 294.0192
@@ -71,17 +71,17 @@ L 142.7328 294.0192
 L 142.7328 233.1936
 L 11.4336 233.1936
 z
-" clip-path="url(#pb873719464)" style="fill: #e5f2f1; stroke: #528c88; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #f1f7f6; stroke: #779994; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 218.16 205.474219
 Q 218.16 217.98696 218.16 229.269864
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 220.56 224.469864
 L 218.16 229.269864
 L 215.76 224.469864
 z
-" clip-path="url(#pb873719464)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
     <path d="M 152.5104 294.0192
@@ -89,17 +89,17 @@ L 283.8096 294.0192
 L 283.8096 233.1936
 L 152.5104 233.1936
 z
-" clip-path="url(#pb873719464)" style="fill: #faf0d9; stroke: #af904e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #faf6ea; stroke: #b6a681; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 357.84 205.474219
 Q 357.84 217.98696 357.84 229.269864
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 360.24 224.469864
 L 357.84 229.269864
 L 355.44 224.469864
 z
-" clip-path="url(#pb873719464)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_10">
     <path d="M 292.1904 294.0192
@@ -107,17 +107,17 @@ L 423.4896 294.0192
 L 423.4896 233.1936
 L 292.1904 233.1936
 z
-" clip-path="url(#pb873719464)" style="fill: #f9e9ed; stroke: #bd7c8d; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #faf2f4; stroke: #b69aa2; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 498.9168 205.474219
 Q 498.9168 217.98696 498.9168 229.269864
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 501.3168 224.469864
 L 498.9168 229.269864
 L 496.5168 224.469864
 z
-" clip-path="url(#pb873719464)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p27719c55e5)" style="fill: #466e7c; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
     <path d="M 433.2672 294.0192
@@ -125,25 +125,25 @@ L 564.5664 294.0192
 L 564.5664 233.1936
 L 433.2672 233.1936
 z
-" clip-path="url(#pb873719464)" style="fill: #eaf0f7; stroke: #7c93ae; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#p27719c55e5)" style="fill: #f2f5f9; stroke: #93a2b5; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 77.0832 203.472
 L 498.9168 203.472
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 288 170.9856
 L 288 203.472
-" clip-path="url(#pb873719464)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p27719c55e5)" style="fill: none; stroke: #466e7c; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(225 45.243775)">时间起点与暂停记录</text>
     <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(176 62.667213)">开始播放时补偿混音等待和输出延迟</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #ffffff" transform="translate(246 137.3265)">统一节拍进度</text>
-    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #ffffff" transform="translate(225 154.771813)">音轨循环时拍数继续</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(246 137.3265)">统一节拍进度</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(225 154.771813)">音轨循环时拍数继续</text>
    </g>
    <g id="text_3">
     <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(49.0832 259.515775)">起落判定</text>
@@ -167,7 +167,7 @@ L 288 203.472
   </g>
  </g>
  <defs>
-  <clipPath id="pb873719464">
+  <clipPath id="p27719c55e5">
    <rect x="8.64" y="6.48" width="558.72" height="311.04"/>
   </clipPath>
  </defs>
